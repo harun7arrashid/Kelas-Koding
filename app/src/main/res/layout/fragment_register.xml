@@ -7,7 +7,6 @@
     android:padding="20dp"
     tools:context=".ui.user.RegisterFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/label_daftar"
         android:layout_width="wrap_content"
