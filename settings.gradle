@@ -1,0 +1,3 @@
+rootProject.name = "Kelas Koding"
+include ':app'
+include ':core'
