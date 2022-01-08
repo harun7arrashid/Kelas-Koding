@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import id.ngulemkuy.kelaskoding.databinding.ActivitySplashBinding
+import id.ngulemkuy.kelaskoding.ui.user.LoginActivity
 
 class SplashActivity : AppCompatActivity() {
 
@@ -15,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
         Handler(Looper.getMainLooper()).postDelayed( {
-            startActivity(Intent(this, HomeActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
             finish()
         }, 1500)
     }
