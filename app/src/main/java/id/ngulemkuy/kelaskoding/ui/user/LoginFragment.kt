@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
 import id.ngulemkuy.kelaskoding.R
 import id.ngulemkuy.kelaskoding.databinding.FragmentLoginBinding
 
@@ -25,6 +26,16 @@ class LoginFragment : Fragment() {
     }
 
     private fun initListener() {
+        binding.btnLoginEmail.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_loginDetailFragment)
+        }
 
+        binding.tvRegister.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
+
+        binding.labelRegister.setOnClickListener {
+            findNavController().navigate(R.id.action_loginFragment_to_registerFragment)
+        }
     }
 }
