@@ -82,10 +82,16 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+        <action
+            android:id="@+id/action_registerDetailFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <activity
         android:id="@+id/homeActivity"
-        android:name="id.ngulemkuy.kelaskoding.ui.activity.HomeActivity"
+        android:name="id.ngulemkuy.kelaskoding.ui.home.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
 

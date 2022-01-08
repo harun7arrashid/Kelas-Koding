@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/navigation_bootcamp">
+
+    <fragment
+        android:id="@+id/navigation_bootcamp"
+        android:name="id.ngulemkuy.kelaskoding.ui.home.BootcampFragment"
+        android:label="fragment_bootcamp"
+        tools:layout="@layout/fragment_bootcamp" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="id.ngulemkuy.kelaskoding.ui.home.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
