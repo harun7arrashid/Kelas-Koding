@@ -24,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupNavController() {
-        val navView: BottomNavigationView = findViewById(R.id.bottom_nav_home)
+        val navView: BottomNavigationView = binding.bottomNavHome
         val navController: NavController  = findNavController(R.id.nav_host_home)
 
         val appBarConfiguration = AppBarConfiguration.Builder(
